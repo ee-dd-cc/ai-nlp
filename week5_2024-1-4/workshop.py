@@ -36,7 +36,7 @@ def clearSentence(text):
 csv_data['text2'] = csv_data['text'].apply(clearSentence)
 csv_data['length'] = csv_data['text2'].apply(len)
 
-# print(csv_data)
+print(csv_data)
 
 # 4 Use labelEncoder method to convert class target
 label_encoder = LabelEncoder()
@@ -57,5 +57,5 @@ bow_df = pd.DataFrame(bow_transformed.toarray(), columns=vectorizer.get_feature_
 top_5 = bow_df.head(5)
 bottom_5 = bow_df.tail(5)
 
-print(top_5)
-print(bottom_5)
+print('top_5\n', top_5)
+print('bottom_5\n', bottom_5)
