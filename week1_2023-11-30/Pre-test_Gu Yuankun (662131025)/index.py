@@ -1,6 +1,9 @@
 import pandas as pd
 import re
 
+str1 = 'abcde s'
+print(list(str1))
+
 # read csv
 # csv_data = pd.read_csv('./spam.csv', header=None, encoding='ISO-8859-1')
 csv_data = pd.read_csv('./spam.csv', encoding='ISO-8859-1')

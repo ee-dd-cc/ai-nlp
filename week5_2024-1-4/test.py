@@ -1,9 +1,10 @@
-# import re
+import re
 
-# text = '111Python222'
+text = '111 Python 222'
 # text1 = '09865'
 
-# # isPy = re.search(r'\bPython\b', text)
+isPy = re.search(r'\bPython\b', text)
+print(isPy)
 # isPy = re.search('Python', text)
 
 # #[0-9] 匹配第一个数字，确保它在 0 到 9 之间；\d{4} 匹配接下来的四个数字；
@@ -18,11 +19,12 @@
 
 # print(isPost)
 
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-# import stopwords from nltk.corpus
-sentence = 'Machine learning is cool!'
-stop_words = set(stopwords.words('english'))
-word_tokens = word_tokenize(sentence)
-filtered_sentence = [w for w in word_tokens if not w in stop_words]
-print(filtered_sentence)
+# from nltk.corpus import stopwords
+# from nltk.tokenize import word_tokenize
+# # import stopwords from nltk.corpus
+# sentence = 'Machine learning is cool!'
+# stop_words = set(stopwords.words('english'))
+# word_tokens = word_tokenize(sentence)
+# filtered_sentence = [w for w in word_tokens if not w in stop_words]
+# print(filtered_sentence)
+
