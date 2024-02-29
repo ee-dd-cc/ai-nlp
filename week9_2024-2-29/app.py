@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 from PIL import Image
 
-pickle_in = open('./model_iris.pkl', 'rb')
+pickle_in = open('./model_iris copy.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 # print('----classifier', classifier)
