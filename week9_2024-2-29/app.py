@@ -1,6 +1,5 @@
 # app.py
 import pickle
-import warnings
 import streamlit as st
 from PIL import Image
 
